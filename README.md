@@ -11,4 +11,4 @@ As mentioned in this Tutorial repo, you have to change URLs in each source code 
 It should be noted that the source codes for Experiments 1-5 are similar to each other and the source code in the Tutorial repo is simiar to the one for Experiment 6. This was due to the advancement in programming we've made over the cource of project. A major difference was that group assignment was completely random in Experiments 1-5 whereas the assignment was done using a list of quasi-random numbers in Experiment 6 in order to have better control over the number of participants across groups. 
 
 Updates
-2021-8-29: I revised the "session" file to make it easier for readers/uders to change URLs. They are located in the same place instead of being scattered all over the place. I also revised the file for a more accurate timer.
+2021-8-29: I revised "experimental_session" files to make it easier for readers/uders to change URLs. They are located in the same place instead of being scattered all over the place. I also revised them for a more accurate timer.
