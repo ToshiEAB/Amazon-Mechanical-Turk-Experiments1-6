@@ -882,7 +882,22 @@
                         sessionStorage.setItem("lossWeight", lossWeight); // Save for file name
                         sessionStorage.setItem("noLossSign", noLossSign); // Save for file name
                         sessionStorage.setItem("dollarPerPoint", dollarPerPoint);
-                        window.location.replace(URL_page_endofsession);
+                        
+			var dollar = netGain * dollarPerPoint + basePay;
+                        dollar = dollar.toFixed(2); // Decimal points of 2 (string)
+                        sessionStorage.setItem("dollar", dollar);
+                        
+                        function delay(msec){
+                            return new Promise(function(resolve){
+                                    setTimeout(resolve, msec);
+                                });
+                        }
+                        async function wait(msec){
+                            await delay(msec);
+                            window.location.replace(URL_webpage_endofsession);
+                        }
+                        wait(500); // 0.5-s delay for having enough time to store data with sessionStorage.setItem
+
                     },
                     error: function() {
                         flagDuringSave = 0;
