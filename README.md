@@ -12,3 +12,5 @@ It should be noted that the source codes for Experiments 1-5 are similar to each
 
 Updates
 2021-8-29: I revised "experimental_session" files to make it easier for readers/uders to change URLs. They are located in the same place instead of being scattered all over the place. I also revised them for a more accurate timer.
+
+2022-4-2: I revised several JavaScript files for preventing potential bugs.
